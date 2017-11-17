@@ -1,0 +1,79 @@
+header {
+  background-color: $color-of-header;
+  padding: 57px 0 145px 0;
+}
+
+.top-of-head {
+  margin: 0 0 135px 0;
+  .logo {
+    float: left;
+    padding: 0 0 0 62px;
+    strong {
+      a {
+        background: url("../../images/logo.png");
+        height: 37px;
+        width: 117px;
+        display: block;
+        text-indent: 9999px;
+      }
+    }
+  }
+
+  .navigation {
+    ul {
+      float: right;
+
+      padding: 10px 0 0 0;
+      li {
+        display: inline-block;
+        margin-right: 10px;
+        a {
+          padding: 5px 18px 3px 18px;
+          font: 16px/18px 'Titillium Web', sans-serif;
+          color: $color-white;
+          &:hover {
+            background-color: #643a79;
+            border-radius: 5px;
+
+          }
+        }
+      }
+    }
+  }
+}
+.bottom-of-head{
+  h1{
+    font:700 42px/49px "Titillium Web", sans-serif;
+    text-align: center;
+    color: $color-of-h1;
+    margin-bottom: 54px;
+  }
+  button{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 294px;
+    height: 70px;
+    background-color: #eb7d4b;
+    color: $color-white;
+    font: 600 18px/26px "Titillium Web", sans-serif;
+    border: none;
+    outline:none;
+    border-radius: 5px;
+    border-bottom: 4px solid #c86a40;
+    cursor: pointer;
+    &:active{
+      background-color: #c86a40;
+    }
+  }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.wrapper{
+  width: 990px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+}
+

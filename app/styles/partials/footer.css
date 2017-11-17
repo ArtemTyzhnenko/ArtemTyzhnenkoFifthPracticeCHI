@@ -1,0 +1,63 @@
+footer {
+  padding: 19px 0 26px 0; }
+  footer h4 {
+    font: 15px/18px Arial;
+    color: #393939;
+    margin: 0 0 19px 0; }
+  footer a {
+    font: 12px/17px Arial;
+    color: #393939; }
+  footer .links {
+    width: 490px;
+    float: left;
+    margin: 0 0 0 20px; }
+    footer .links ul {
+      display: block;
+      float: left;
+      margin: 0 77px 0 0; }
+  footer .security {
+    float: left;
+    padding-left: 7px; }
+  footer .social {
+    float: right;
+    padding-right: 55px; }
+    footer .social h4 {
+      margin: 0 0 22px 0; }
+    footer .social ul {
+      margin: 0 0 20px 0; }
+      footer .social ul .tw {
+        display: block;
+        margin-right: 6px;
+        float: left;
+        padding: 12px;
+        background: url(../images/grey-social.png) top 0 left 0; }
+        footer .social ul .tw:hover {
+          background: url(../images/color-social.png) top 0 left 0; }
+      footer .social ul .fb {
+        display: block;
+        margin-right: 6px;
+        float: left;
+        padding: 12px;
+        background: url(../images/grey-social.png) top 0 right 54px; }
+        footer .social ul .fb:hover {
+          background: url(../images/color-social.png) top 0 right 54px; }
+      footer .social ul .in {
+        display: block;
+        margin-right: 6px;
+        float: left;
+        padding: 12px;
+        background: url(../images/grey-social.png) top 0 right 84px; }
+        footer .social ul .in:hover {
+          background: url(../images/color-social.png) top 0 right 84px; }
+      footer .social ul .rss {
+        display: block;
+        margin-right: 6px;
+        float: left;
+        padding: 12px;
+        background: url(../images/grey-social.png) top 0 right 114px; }
+        footer .social ul .rss:hover {
+          background: url(../images/color-social.png) top 0 right 114px; }
+    footer .social p {
+      font: 11px/19px Arial; }
+
+/*# sourceMappingURL=footer.css.map */
