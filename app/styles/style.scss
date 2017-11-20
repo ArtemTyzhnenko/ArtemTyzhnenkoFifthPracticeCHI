@@ -13,14 +13,13 @@
 
 body {
   width: 100%;
-  margin: 0 auto;
-
 }
 
 .wrapper {
-  width: 1140px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 60px 10% 60px 10%;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 ul {
@@ -35,11 +34,6 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4 {
-  margin: 0;
-  padding: 0;
-}
-
 p {
   margin: 0;
   padding: 0;
@@ -52,22 +46,36 @@ blockquote {
 
 /*Medium size*/
 @media (min-width: 992px) and (max-width: 1199px) {
-  .wrapper {
-    width: 990px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
   .people-say {
     .reviews {
       justify-content: center;
+    }
+    .skills {
+      .graphic {
+        ul {
+          li {
+            text-align: center;
+          }
+        }
+      }
     }
   }
 }
 
 /*Tablets*/
 @media (min-width: 768px) and (max-width: 991px) {
-  .wrapper {
-    width: 750px;
+
+  .top-of-head {
+    .navigation {
+      ul {
+        li {
+          a {
+            padding: 5px 10px 3px 10px;
+            font: 14px/15px 'Titillium Web', sans-serif;
+          }
+        }
+      }
+    }
   }
   .services {
     .categories {
@@ -86,6 +94,15 @@ blockquote {
         justify-content: space-around;
         align-items: baseline;
         flex-wrap: wrap;
+      }
+    }
+  }
+  .skills {
+    .graphic {
+      ul {
+        li {
+          width: 50%;
+        }
       }
     }
   }
@@ -108,49 +125,112 @@ blockquote {
     }
   }
   .get-in-touch {
-    .form {
-      width: 750px;
-      ul {
+    form {
+      width: 626px;
+      div {
         justify-content: center;
         .info {
-          width: 336px;
+          width: 250px;
         }
         .message {
-          width: 700px;
+          width: 574px;
         }
       }
+    }
+  }
+  footer {
+    span {
+      display: none;
+    }
+    a {
+      outline: none;
+    }
+    .fb {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left 0 repeat-x;
+    }
+    .tw {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -44px repeat-x;
+    }
+    .gp {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -87px repeat-x;
+    }
+    .in {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -131px repeat-x;
+    }
+    .be {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -163px repeat-x;
+    }
+    .dr {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -207px repeat-x;
+    }
+    .gt {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -250px repeat-x;
     }
   }
 }
 
 /*Phone*/
 @media (min-width: 540px) and (max-width: 767px) {
-  .wrapper {
-    width: 540px;
+  h2{
+    line-height: 50px;
   }
-  header {
-    padding: 50px 0 50px 0;
-  }
-
   .top-of-head {
     margin: 0 0 50px 0;
+    button {
+      display: none;
+    }
     .logo {
       margin: 0 0 30px 0;
+      padding: 0;
+    }
+    .navigation {
+      ul {
+        li {
+          margin: 0;
+          a {
+            padding: 5px 6px 3px 6px;
+            font: 14px/18px 'Titillium Web', sans-serif;
+            color: #ffffff;
+          }
+        }
+      }
     }
   }
   .services {
-    padding: 50px 0 50px 0;
     .categories {
       ul {
         display: flex;
         justify-content: space-around;
         align-items: baseline;
         flex-wrap: wrap;
+        li {
+          margin-bottom: 50px;
+        }
       }
     }
   }
   .team {
-    padding: 50px 0 50px 0;
     .people {
       ul {
         display: flex;
@@ -161,11 +241,11 @@ blockquote {
     }
   }
   .skills {
-    padding: 50px 0 50px 0;
     .graphic {
       ul {
         flex-wrap: wrap;
         li {
+          width: 50%;
           h4 {
             margin: 0 0 20px 0;
           }
@@ -173,11 +253,7 @@ blockquote {
       }
     }
   }
-  .portfolio {
-    padding: 50px 0 50px 0;
-  }
   .people-say {
-    padding: 50px 0 0 0;
     .reviews {
       justify-content: center;
       li {
@@ -206,48 +282,126 @@ blockquote {
       }
     }
   }
-
   .get-in-touch {
-    padding: 50px 0 50px 0;
-    .form {
+    form {
       width: 400px;
-      ul {
+      div {
         justify-content: center;
         .info {
           width: 400px;
         }
         .message {
-          width: 400px;
+          width: 374px;
         }
       }
     }
   }
   footer {
-    ul {
-      li {
-        a {
-          font: 12px/15px "Titillium Web", sans-serif;
-        }
-      }
+    span {
+      display: none;
+    }
+    .fb {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left 0 repeat-x;
+    }
+    .tw {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -44px repeat-x;
+    }
+    .gp {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -87px repeat-x;
+    }
+    .in {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -131px repeat-x;
+    }
+    .be {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -163px repeat-x;
+    }
+    .dr {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -207px repeat-x;
+    }
+    .gt {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -250px repeat-x;
     }
   }
 }
 
 @media (min-width: 320px) and (max-width: 539px) {
-  .wrapper {
-    width: 300px;
+  h2{
+    line-height: 50px;
   }
-  header {
-    padding: 50px 0 50px 0;
+  .top-of-head {
+    margin: 0 0 50px 0;
+    position: relative;
+    .logo{
+      width: 100%;
+    }
+    button {
+      position: absolute;
+      right: 0;
+      top: -5px;
+      display: block;
+      background: none;
+      border: none;
+      padding:5px 15px 0px 15px;
+      line-height:45px;
+      font-size:1.4em;
+      outline: none;
+    }
+    .hamburger{
+      font-size:20px;
+    }
+    .cross{
+      font-size: 40px;
+    }
+    .navigation {
+      width: 100%;
+      ul {
+        float: none;
+        display: inline-block;
+        text-align: center;
+        width: 30%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        li {
+          padding: 10px 0;
+          margin: 0 ;
+          a {
+            display: block;
+            &:hover {
+              background: none;
+              border: none;
+            }
+          }
+        }
+      }
+    }
     .logo {
       margin: 0 0 50px 0;
-    }
-    .top-of-head {
-      margin: 0 0 50px 0;
+      padding: 0;
     }
   }
+
   .services {
-    padding: 50px 0 50px 0;
     .categories {
       ul {
         display: flex;
@@ -257,19 +411,22 @@ blockquote {
       }
     }
   }
-
   .team {
-    padding: 50px 0 50px 0;
     .people {
       ul {
         display: flex;
         justify-content: space-around;
         align-items: baseline;
         flex-wrap: wrap;
+        .four-social {
+          margin-bottom: 50px;
+        }
+        .three-social {
+          margin-bottom: 50px;
+        }
       }
     }
   }
-
   .team {
     .people {
       ul {
@@ -283,28 +440,40 @@ blockquote {
       }
     }
   }
-
   .skills {
-    padding: 50px 0 50px 0;
     .graphic {
       ul {
         flex-wrap: wrap;
         li {
+          width: 100%;
+          display: block;
+          img {
+            display: block;
+            margin: auto;
+            padding: 0 0 25px 0;
+          }
           h4 {
-            margin: 0 0 20px 0;
+            margin: 0 0 50px 0;
           }
         }
       }
     }
   }
   .portfolio {
-    padding: 50px 0 50px 0;
     .portfolio-nav {
-      display: none;
+      li {
+        margin: 0 0 20px 0;
+        a {
+          width: 90px;
+          margin: 0 10px 0 10px;
+        }
+      }
+    }
+    img {
+      width: 100%;
     }
   }
   .people-say {
-    padding: 50px 0 0 0;
     .portfolio {
       .portfolio-nav {
         display: none;
@@ -329,27 +498,68 @@ blockquote {
     }
   }
   .get-in-touch {
-    padding: 50px 0 50px 0;
-    .form {
-      width: 300px;
-      ul {
-        justify-content: center;
+    form {
+      width: 250px;
+      justify-content: center;
+      div {
         .info {
           width: 250px;
         }
         .message {
-          width: 250px;
+          width: 224px;
         }
       }
     }
+    button {
+      width: 294px;
+    }
   }
   footer {
-    ul {
-      li {
-        a {
-          font: 9px/12px "Titillium Web", sans-serif;
-        }
-      }
+    span {
+      display: none;
+    }
+
+    .fb {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left 0 repeat-x;
+    }
+    .tw {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -44px repeat-x;
+    }
+    .gp {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -87px repeat-x;
+    }
+    .in {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -131px repeat-x;
+    }
+    .be {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -163px repeat-x;
+    }
+    .dr {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -207px repeat-x;
+    }
+    .gt {
+      display: block;
+      float: left;
+      padding: 16px;
+      background: url(./../images/sprite-of-team.png) top 0 left -250px repeat-x;
     }
   }
 }

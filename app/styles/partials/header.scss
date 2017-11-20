@@ -1,10 +1,12 @@
-header {
-  background-color: $color-of-header;
-  padding: 57px 0 145px 0;
-}
 
+header{
+    background-color: #87509c;
+}
 .top-of-head {
   margin: 0 0 135px 0;
+  button{
+    display: none;
+  }
   .logo {
     float: left;
     padding: 0 0 0 62px;
@@ -18,11 +20,9 @@ header {
       }
     }
   }
-
   .navigation {
     ul {
       float: right;
-
       padding: 10px 0 0 0;
       li {
         display: inline-block;
@@ -32,9 +32,8 @@ header {
           font: 16px/18px 'Titillium Web', sans-serif;
           color: $color-white;
           &:hover {
-            background-color: #643a79;
+            background: #643a79;
             border-radius: 5px;
-
           }
         }
       }
@@ -66,14 +65,3 @@ header {
     }
   }
 }
-
-
-
-@media (min-width: 992px) and (max-width: 1199px) {
-.wrapper{
-  width: 990px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-}
-

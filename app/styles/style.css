@@ -1,13 +1,13 @@
 @import url(normalize.css);
 /* Brand Colors ------------------------------------------------*/
-.h2 {
+h2 {
   text-align: center;
   font: 700 40px/30px 'Titillium Web', sans-serif;
   color: #ffffff;
   position: relative;
-  margin-bottom: 43px;
+  margin: 0 0 43px 0;
   letter-spacing: 4px; }
-  .h2::after {
+  h2::after {
     width: 87px;
     height: 4px;
     content: "";
@@ -18,19 +18,19 @@
     bottom: -25px;
     background: #14a58c; }
 
-.p-under-article {
+h2 + p {
   text-align: center;
   font: 18px/26px 'Titillium Web', sans-serif;
   color: #ffffff;
   margin: 0 0 70px 0; }
 
-.h4-under-img {
+h4 {
   margin: 0 0 21px 0;
   font: 700 24px/18px 'Titillium Web';
   text-transform: uppercase;
   color: #ffffff; }
 
-.p-under-h4 {
+h4 ~ p {
   font: 16px/25px 'Titillium Web';
   text-align: center;
   width: 220px;
@@ -54,11 +54,12 @@
     background-color: #14a58c; }
 
 header {
-  background-color: #87509c;
-  padding: 57px 0 145px 0; }
+  background-color: #87509c; }
 
 .top-of-head {
   margin: 0 0 135px 0; }
+  .top-of-head button {
+    display: none; }
   .top-of-head .logo {
     float: left;
     padding: 0 0 0 62px; }
@@ -79,7 +80,7 @@ header {
         font: 16px/18px 'Titillium Web', sans-serif;
         color: #ffffff; }
         .top-of-head .navigation ul li a:hover {
-          background-color: #643a79;
+          background: #643a79;
           border-radius: 5px; }
 
 .bottom-of-head h1 {
@@ -103,14 +104,8 @@ header {
   .bottom-of-head button:active {
     background-color: #c86a40; }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  .wrapper {
-    width: 990px;
-    margin: 0 auto;
-    overflow: hidden; } }
 .services {
-  background-color: #17c2a4;
-  padding: 118px 0 127px 0; }
+  background-color: #17c2a4; }
   .services .categories ul {
     display: flex;
     justify-content: space-around;
@@ -137,8 +132,7 @@ header {
         display: block; }
 
 .team {
-  background-color: #e7f1f8;
-  padding: 118px 0 107px 0; }
+  background-color: #e7f1f8; }
   .team h2 {
     color: #3c4761;
     font-size: 41px;
@@ -199,11 +193,10 @@ header {
             display: block;
             float: left;
             padding: 16px;
-            background: url(../../images/sprite-of-team.png) top 0 left -130px no-repeat; }
+            background: url(../../images/sprite-of-team.png) top 0 left -131px no-repeat; }
 
 .skills {
-  background-color: #ffffff;
-  padding: 116px 0 123px 0; }
+  background-color: #ffffff; }
   .skills h2 {
     color: #3c4761;
     font-size: 40px; }
@@ -215,16 +208,17 @@ header {
   .skills .graphic ul {
     display: flex;
     justify-content: space-around; }
-    .skills .graphic ul li img {
-      margin: 0 0 28px 0; }
-    .skills .graphic ul li h4 {
-      color: #3c4761;
-      text-align: center;
-      margin: 0; }
+    .skills .graphic ul li {
+      text-align: center; }
+      .skills .graphic ul li img {
+        margin: 0 0 28px 0; }
+      .skills .graphic ul li h4 {
+        color: #3c4761;
+        text-align: center;
+        margin: 0; }
 
 .portfolio {
-  background-color: #ffdd99;
-  padding: 118px 0 109px 0; }
+  background-color: #ffdd99; }
   .portfolio h2 {
     color: #393939;
     margin-bottom: 45px; }
@@ -268,8 +262,7 @@ header {
       background-color: #14a58c; }
 
 .people-say {
-  background-color: #d74680;
-  padding: 118px 0 0 0; }
+  background-color: #d74680; }
   .people-say h2 {
     color: #ffffff;
     margin-bottom: 43px; }
@@ -294,57 +287,55 @@ header {
         display: block;
         float: left;
         margin-right: 50px; }
-      .people-say .reviews li .quote {
-        width: 350px;
-        margin: 0 0 0 168px; }
-        .people-say .reviews li .quote blockquote {
-          padding-top: 2px;
-          font: 22px/33px 'Titillium Web', sans-serif;
-          font-style: italic;
-          margin: 0 0 24px 0; }
-        .people-say .reviews li .quote h4 {
-          margin: 0 0 5px 0; }
-        .people-say .reviews li .quote span {
-          font: 18px/26px 'Titillium Web', sans-serif;
-          color: #ffdd99; }
+  .people-say .quote {
+    width: 350px;
+    margin: 0 0 0 168px; }
+    .people-say .quote blockquote {
+      padding-top: 2px;
+      font: 22px/33px 'Titillium Web', sans-serif;
+      font-style: italic;
+      margin: 0 0 24px 0; }
+    .people-say .quote h4 {
+      margin: 0 0 5px 0; }
+    .people-say .quote span {
+      font: 18px/26px 'Titillium Web', sans-serif;
+      color: #ffdd99; }
 
 .get-in-touch {
-  background-color: #3c5499;
-  padding: 118px 0 112px 0; }
+  background-color: #3c5499; }
   .get-in-touch h2::after {
     background: #273a71; }
   .get-in-touch p {
     margin-bottom: 76px; }
-  .get-in-touch .form {
+  .get-in-touch form {
     display: flex;
     width: 860px;
-    margin: 0 auto; }
-    .get-in-touch .form ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-      .get-in-touch .form ul .info {
-        width: 388px;
-        padding: 20px 0 17px 26px;
-        border: none;
-        border-radius: 5px;
-        background: #273a71;
-        outline: none;
-        color: #ffffff;
-        margin-bottom: 27px; }
-        .get-in-touch .form ul .info::-webkit-input-placeholder {
-          color: #ffffff; }
-      .get-in-touch .form ul .message {
-        width: 834px;
-        padding: 22px 0px 160px 26px;
-        background-color: #273a71;
-        color: #ffffff;
-        outline: none;
-        border: none;
-        border-radius: 5px;
-        margin: 0 0 60px 0; }
-        .get-in-touch .form ul .message::-webkit-input-placeholder {
-          color: #ffffff; }
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .get-in-touch form div .info {
+      width: 388px;
+      padding: 20px 0 17px 26px;
+      border: none;
+      border-radius: 5px;
+      background: #273a71;
+      outline: none;
+      color: #ffffff;
+      margin-bottom: 27px; }
+      .get-in-touch form div .info::-webkit-input-placeholder {
+        color: #ffffff; }
+    .get-in-touch form div .message {
+      width: 808px;
+      padding: 22px 26px 30px 26px;
+      background-color: #273a71;
+      color: #ffffff;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      margin: 0 0 60px 0; }
+      .get-in-touch form div .message::-webkit-input-placeholder {
+        color: #ffffff; }
   .get-in-touch button {
     background-color: #30bae7;
     border-bottom: 4px solid #299ec5; }
@@ -352,8 +343,7 @@ header {
       background-color: #299ec5; }
 
 footer {
-  background: #344b8e;
-  padding: 45px 0 40px 0; }
+  background: #344b8e; }
   footer ul {
     display: flex;
     justify-content: space-around; }
@@ -369,13 +359,13 @@ footer {
   clear: both; }
 
 body {
-  width: 100%;
-  margin: 0 auto; }
+  width: 100%; }
 
 .wrapper {
-  width: 1140px;
-  margin: 0 auto;
-  overflow: hidden; }
+  width: 100%;
+  padding: 60px 10% 60px 10%;
+  overflow: hidden;
+  box-sizing: border-box; }
 
 ul {
   margin: 0;
@@ -385,10 +375,6 @@ ul {
 
 a {
   text-decoration: none; }
-
-h1, h2, h3, h4 {
-  margin: 0;
-  padding: 0; }
 
 p {
   margin: 0;
@@ -400,17 +386,15 @@ blockquote {
 
 /*Medium size*/
 @media (min-width: 992px) and (max-width: 1199px) {
-  .wrapper {
-    width: 990px;
-    margin: 0 auto;
-    overflow: hidden; }
-
   .people-say .reviews {
-    justify-content: center; } }
+    justify-content: center; }
+  .people-say .skills .graphic ul li {
+    text-align: center; } }
 /*Tablets*/
 @media (min-width: 768px) and (max-width: 991px) {
-  .wrapper {
-    width: 750px; }
+  .top-of-head .navigation ul li a {
+    padding: 5px 10px 3px 10px;
+    font: 14px/15px 'Titillium Web', sans-serif; }
 
   .services .categories ul {
     display: flex;
@@ -424,158 +408,307 @@ blockquote {
     align-items: baseline;
     flex-wrap: wrap; }
 
+  .skills .graphic ul li {
+    width: 50%; }
+
   .people-say .reviews {
     justify-content: center; }
 
   .team .people ul li ul li {
     width: 32px; }
 
-  .get-in-touch .form {
-    width: 750px; }
-    .get-in-touch .form ul {
+  .get-in-touch form {
+    width: 626px; }
+    .get-in-touch form div {
       justify-content: center; }
-      .get-in-touch .form ul .info {
-        width: 336px; }
-      .get-in-touch .form ul .message {
-        width: 700px; } }
+      .get-in-touch form div .info {
+        width: 250px; }
+      .get-in-touch form div .message {
+        width: 574px; }
+
+  footer span {
+    display: none; }
+  footer a {
+    outline: none; }
+  footer .fb {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left 0 repeat-x; }
+  footer .tw {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -44px repeat-x; }
+  footer .gp {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -87px repeat-x; }
+  footer .in {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -131px repeat-x; }
+  footer .be {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -163px repeat-x; }
+  footer .dr {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -207px repeat-x; }
+  footer .gt {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -250px repeat-x; } }
 /*Phone*/
 @media (min-width: 540px) and (max-width: 767px) {
-  .wrapper {
-    width: 540px; }
-
-  header {
-    padding: 50px 0 50px 0; }
+  h2 {
+    line-height: 50px; }
 
   .top-of-head {
     margin: 0 0 50px 0; }
+    .top-of-head button {
+      display: none; }
     .top-of-head .logo {
-      margin: 0 0 30px 0; }
+      margin: 0 0 30px 0;
+      padding: 0; }
+    .top-of-head .navigation ul li {
+      margin: 0; }
+      .top-of-head .navigation ul li a {
+        padding: 5px 6px 3px 6px;
+        font: 14px/18px 'Titillium Web', sans-serif;
+        color: #ffffff; }
 
-  .services {
-    padding: 50px 0 50px 0; }
-    .services .categories ul {
-      display: flex;
-      justify-content: space-around;
-      align-items: baseline;
-      flex-wrap: wrap; }
+  .services .categories ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap; }
+    .services .categories ul li {
+      margin-bottom: 50px; }
 
-  .team {
-    padding: 50px 0 50px 0; }
-    .team .people ul {
-      display: flex;
-      justify-content: space-around;
-      align-items: baseline;
-      flex-wrap: wrap; }
+  .team .people ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap; }
 
-  .skills {
-    padding: 50px 0 50px 0; }
-    .skills .graphic ul {
-      flex-wrap: wrap; }
+  .skills .graphic ul {
+    flex-wrap: wrap; }
+    .skills .graphic ul li {
+      width: 50%; }
       .skills .graphic ul li h4 {
         margin: 0 0 20px 0; }
 
-  .portfolio {
-    padding: 50px 0 50px 0; }
-
-  .people-say {
-    padding: 50px 0 0 0; }
-    .people-say .reviews {
-      justify-content: center; }
-      .people-say .reviews li {
-        width: 510px;
+  .people-say .reviews {
+    justify-content: center; }
+    .people-say .reviews li {
+      width: 510px;
+      margin-bottom: 40px; }
+      .people-say .reviews li:nth-child(3) {
         margin-bottom: 40px; }
-        .people-say .reviews li:nth-child(3) {
-          margin-bottom: 40px; }
-        .people-say .reviews li:nth-child(4) {
-          margin-bottom: 40px; }
+      .people-say .reviews li:nth-child(4) {
+        margin-bottom: 40px; }
 
   .team .people ul li ul li {
     width: 32px; }
 
-  .get-in-touch {
-    padding: 50px 0 50px 0; }
-    .get-in-touch .form {
-      width: 400px; }
-      .get-in-touch .form ul {
-        justify-content: center; }
-        .get-in-touch .form ul .info {
-          width: 400px; }
-        .get-in-touch .form ul .message {
-          width: 400px; }
-
-  footer ul li a {
-    font: 12px/15px "Titillium Web", sans-serif; } }
-@media (min-width: 320px) and (max-width: 539px) {
-  .wrapper {
-    width: 300px; }
-
-  header {
-    padding: 50px 0 50px 0; }
-    header .logo {
-      margin: 0 0 50px 0; }
-    header .top-of-head {
-      margin: 0 0 50px 0; }
-
-  .services {
-    padding: 50px 0 50px 0; }
-    .services .categories ul {
-      display: flex;
-      justify-content: space-around;
-      align-items: baseline;
-      flex-wrap: wrap; }
-
-  .team {
-    padding: 50px 0 50px 0; }
-    .team .people ul {
-      display: flex;
-      justify-content: space-around;
-      align-items: baseline;
-      flex-wrap: wrap; }
-
-  .team .people ul li ul li {
-    width: 32px; }
-
-  .skills {
-    padding: 50px 0 50px 0; }
-    .skills .graphic ul {
-      flex-wrap: wrap; }
-      .skills .graphic ul li h4 {
-        margin: 0 0 20px 0; }
-
-  .portfolio {
-    padding: 50px 0 50px 0; }
-    .portfolio .portfolio-nav {
-      display: none; }
-
-  .people-say {
-    padding: 50px 0 0 0; }
-    .people-say .portfolio .portfolio-nav {
-      display: none; }
-    .people-say .reviews {
+  .get-in-touch form {
+    width: 400px; }
+    .get-in-touch form div {
       justify-content: center; }
-      .people-say .reviews li {
-        margin-bottom: 40px;
-        width: unset; }
-        .people-say .reviews li:nth-child(3) {
-          margin-bottom: 40px; }
-        .people-say .reviews li:nth-child(4) {
-          margin-bottom: 40px; }
-        .people-say .reviews li .quote {
-          width: 300px;
+      .get-in-touch form div .info {
+        width: 400px; }
+      .get-in-touch form div .message {
+        width: 374px; }
+
+  footer span {
+    display: none; }
+  footer .fb {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left 0 repeat-x; }
+  footer .tw {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -44px repeat-x; }
+  footer .gp {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -87px repeat-x; }
+  footer .in {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -131px repeat-x; }
+  footer .be {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -163px repeat-x; }
+  footer .dr {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -207px repeat-x; }
+  footer .gt {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -250px repeat-x; } }
+@media (min-width: 320px) and (max-width: 539px) {
+  h2 {
+    line-height: 50px; }
+
+  .top-of-head {
+    margin: 0 0 50px 0;
+    position: relative; }
+    .top-of-head .logo {
+      width: 100%; }
+    .top-of-head button {
+      position: absolute;
+      right: 0;
+      top: -5px;
+      display: block;
+      background: none;
+      border: none;
+      padding: 5px 15px 0px 15px;
+      line-height: 45px;
+      font-size: 1.4em;
+      outline: none; }
+    .top-of-head .hamburger {
+      font-size: 20px; }
+    .top-of-head .cross {
+      font-size: 40px; }
+    .top-of-head .navigation {
+      width: 100%; }
+      .top-of-head .navigation ul {
+        float: none;
+        display: inline-block;
+        text-align: center;
+        width: 30%;
+        margin-left: 50%;
+        transform: translateX(-50%); }
+        .top-of-head .navigation ul li {
+          padding: 10px 0;
           margin: 0; }
+          .top-of-head .navigation ul li a {
+            display: block; }
+            .top-of-head .navigation ul li a:hover {
+              background: none;
+              border: none; }
+    .top-of-head .logo {
+      margin: 0 0 50px 0;
+      padding: 0; }
 
-  .get-in-touch {
-    padding: 50px 0 50px 0; }
-    .get-in-touch .form {
-      width: 300px; }
-      .get-in-touch .form ul {
-        justify-content: center; }
-        .get-in-touch .form ul .info {
-          width: 250px; }
-        .get-in-touch .form ul .message {
-          width: 250px; }
+  .services .categories ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap; }
 
-  footer ul li a {
-    font: 9px/12px "Titillium Web", sans-serif; } }
+  .team .people ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap; }
+    .team .people ul .four-social {
+      margin-bottom: 50px; }
+    .team .people ul .three-social {
+      margin-bottom: 50px; }
+
+  .team .people ul li ul li {
+    width: 32px; }
+
+  .skills .graphic ul {
+    flex-wrap: wrap; }
+    .skills .graphic ul li {
+      width: 100%;
+      display: block; }
+      .skills .graphic ul li img {
+        display: block;
+        margin: auto;
+        padding: 0 0 25px 0; }
+      .skills .graphic ul li h4 {
+        margin: 0 0 50px 0; }
+
+  .portfolio .portfolio-nav li {
+    margin: 0 0 20px 0; }
+    .portfolio .portfolio-nav li a {
+      width: 90px;
+      margin: 0 10px 0 10px; }
+  .portfolio img {
+    width: 100%; }
+
+  .people-say .portfolio .portfolio-nav {
+    display: none; }
+  .people-say .reviews {
+    justify-content: center; }
+    .people-say .reviews li {
+      margin-bottom: 40px;
+      width: unset; }
+      .people-say .reviews li:nth-child(3) {
+        margin-bottom: 40px; }
+      .people-say .reviews li:nth-child(4) {
+        margin-bottom: 40px; }
+      .people-say .reviews li .quote {
+        width: 300px;
+        margin: 0; }
+
+  .get-in-touch form {
+    width: 250px;
+    justify-content: center; }
+    .get-in-touch form div .info {
+      width: 250px; }
+    .get-in-touch form div .message {
+      width: 224px; }
+  .get-in-touch button {
+    width: 294px; }
+
+  footer span {
+    display: none; }
+  footer .fb {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left 0 repeat-x; }
+  footer .tw {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -44px repeat-x; }
+  footer .gp {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -87px repeat-x; }
+  footer .in {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -131px repeat-x; }
+  footer .be {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -163px repeat-x; }
+  footer .dr {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -207px repeat-x; }
+  footer .gt {
+    display: block;
+    float: left;
+    padding: 16px;
+    background: url(./../images/sprite-of-team.png) top 0 left -250px repeat-x; } }
 
 /*# sourceMappingURL=style.css.map */
