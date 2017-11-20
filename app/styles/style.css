@@ -594,14 +594,15 @@ blockquote {
         float: none;
         display: inline-block;
         text-align: center;
-        width: 30%;
+        width: 100px;
         margin-left: 50%;
         transform: translateX(-50%); }
         .top-of-head .navigation ul li {
           padding: 10px 0;
           margin: 0; }
           .top-of-head .navigation ul li a {
-            display: block; }
+            display: block;
+            text-align: center; }
             .top-of-head .navigation ul li a:hover {
               background: none;
               border: none; }
