@@ -34,7 +34,7 @@ h4 ~ p {
   font: 16px/25px 'Titillium Web';
   text-align: center;
   width: 220px;
-  margin: 0;
+  margin: 0 0 40px 0;
   color: #ffffff; }
 
 .button {
@@ -63,8 +63,8 @@ header {
   .top-of-head .logo {
     float: left;
     padding: 0 0 0 62px; }
-    .top-of-head .logo strong a {
-      background: url("../../images/logo.png");
+    .top-of-head .logo a {
+      background: url(../../images/logo.png);
       height: 37px;
       width: 117px;
       display: block;
@@ -165,35 +165,35 @@ header {
       .team .people ul li p {
         width: 200px;
         margin: 0 0 27px 0; }
-      .team .people ul li ul {
-        width: 163px;
-        margin: 0 0 20px 0; }
-        .team .people ul li ul.four-social {
-          width: 163px; }
-        .team .people ul li ul.three-social {
-          width: 119px; }
-        .team .people ul li ul li {
-          display: inline; }
-          .team .people ul li ul li .fb {
-            display: block;
-            float: left;
-            padding: 16px;
-            background: url(../../images/sprite-of-team.png) top 0 left 0 no-repeat; }
-          .team .people ul li ul li .tw {
-            display: block;
-            float: left;
-            padding: 16px;
-            background: url(../../images/sprite-of-team.png) top 0 left -44px no-repeat; }
-          .team .people ul li ul li .in {
-            display: block;
-            float: left;
-            padding: 16px;
-            background: url(../../images/sprite-of-team.png) top 0 left -87px no-repeat; }
-          .team .people ul li ul li .mail {
-            display: block;
-            float: left;
-            padding: 16px;
-            background: url(../../images/sprite-of-team.png) top 0 left -131px no-repeat; }
+  .team .people .social {
+    width: 163px;
+    margin: 0 0 20px 0; }
+    .team .people .social.four-social {
+      width: 163px; }
+    .team .people .social.three-social {
+      width: 119px; }
+    .team .people .social li {
+      display: inline; }
+      .team .people .social li .fb {
+        display: block;
+        float: left;
+        padding: 16px;
+        background: url(../../images/sprite-of-team.png) top 0 left 0 no-repeat; }
+      .team .people .social li .tw {
+        display: block;
+        float: left;
+        padding: 16px;
+        background: url(../../images/sprite-of-team.png) top 0 left -44px no-repeat; }
+      .team .people .social li .in {
+        display: block;
+        float: left;
+        padding: 16px;
+        background: url(../../images/sprite-of-team.png) top 0 left -87px no-repeat; }
+      .team .people .social li .mail {
+        display: block;
+        float: left;
+        padding: 16px;
+        background: url(../../images/sprite-of-team.png) top 0 left -131px no-repeat; }
 
 .skills {
   background-color: #ffffff; }
@@ -311,7 +311,6 @@ header {
     display: flex;
     width: 860px;
     margin: 0 auto;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
     .get-in-touch form div .info {
@@ -625,8 +624,7 @@ blockquote {
       margin-bottom: 50px; }
     .team .people ul .three-social {
       margin-bottom: 50px; }
-
-  .team .people ul li ul li {
+  .team .people .social li {
     width: 32px; }
 
   .skills .graphic ul {

@@ -192,7 +192,7 @@ blockquote {
 
 /*Phone*/
 @media (min-width: 540px) and (max-width: 767px) {
-  h2{
+  h2 {
     line-height: 50px;
   }
   .top-of-head {
@@ -346,13 +346,13 @@ blockquote {
 }
 
 @media (min-width: 320px) and (max-width: 539px) {
-  h2{
+  h2 {
     line-height: 50px;
   }
   .top-of-head {
     margin: 0 0 50px 0;
     position: relative;
-    .logo{
+    .logo {
       width: 100%;
     }
     button {
@@ -362,15 +362,15 @@ blockquote {
       display: block;
       background: none;
       border: none;
-      padding:5px 15px 0px 15px;
-      line-height:45px;
-      font-size:1.4em;
+      padding: 5px 15px 0px 15px;
+      line-height: 45px;
+      font-size: 1.4em;
       outline: none;
     }
-    .hamburger{
-      font-size:20px;
+    .hamburger {
+      font-size: 20px;
     }
-    .cross{
+    .cross {
       font-size: 40px;
     }
     .navigation {
@@ -384,7 +384,7 @@ blockquote {
         transform: translateX(-50%);
         li {
           padding: 10px 0;
-          margin: 0 ;
+          margin: 0;
 
           a {
             display: block;
@@ -427,21 +427,14 @@ blockquote {
           margin-bottom: 50px;
         }
       }
-    }
-  }
-  .team {
-    .people {
-      ul {
+      .social {
         li {
-          ul {
-            li {
-              width: 32px;
-            }
-          }
+          width: 32px;
         }
       }
     }
   }
+
   .skills {
     .graphic {
       ul {

@@ -34,7 +34,6 @@
             height: 136px;
           }
         }
-
         img {
           margin: 0 0 62px 0;
           display: block;
@@ -46,7 +45,6 @@
 
 .team {
   background-color: #e7f1f8;
-
   h2 {
     color: #3c4761;
     font-size: 41px;
@@ -87,54 +85,51 @@
           width: 200px;
           margin: 0 0 27px 0;
         }
-        ul {
-          width: 163px;
-          margin: 0 0 20px 0;
-          &.four-social {
-            width: 163px;
-          }
-          &.three-social {
-            width: 119px;
-          }
-
-          li {
-
-            display: inline;
-
-            .fb {
-              display: block;
-              float: left;
-              padding: 16px;
-              background: url(../../images/sprite-of-team.png) top 0 left 0 no-repeat;
-            }
-            .tw {
-              display: block;
-              float: left;
-              padding: 16px;
-              background: url(../../images/sprite-of-team.png) top 0 left -44px no-repeat;
-            }
-            .in {
-              display: block;
-              float: left;
-              padding: 16px;
-              background: url(../../images/sprite-of-team.png) top 0 left -87px no-repeat;
-            }
-            .mail {
-              display: block;
-              float: left;
-              padding: 16px;
-              background: url(../../images/sprite-of-team.png) top 0 left -131px no-repeat;
-            }
-          }
+      }
+    }
+    .social {
+      width: 163px;
+      margin: 0 0 20px 0;
+      &.four-social {
+        width: 163px;
+      }
+      &.three-social {
+        width: 119px;
+      }
+      li {
+        display: inline;
+        .fb {
+          display: block;
+          float: left;
+          padding: 16px;
+          background: url(../../images/sprite-of-team.png) top 0 left 0 no-repeat;
+        }
+        .tw {
+          display: block;
+          float: left;
+          padding: 16px;
+          background: url(../../images/sprite-of-team.png) top 0 left -44px no-repeat;
+        }
+        .in {
+          display: block;
+          float: left;
+          padding: 16px;
+          background: url(../../images/sprite-of-team.png) top 0 left -87px no-repeat;
+        }
+        .mail {
+          display: block;
+          float: left;
+          padding: 16px;
+          background: url(../../images/sprite-of-team.png) top 0 left -131px no-repeat;
         }
       }
     }
   }
+
 }
 
 .skills {
   background-color: #ffffff;
-
   h2 {
     color: #3c4761;
     font-size: 40px;
@@ -286,18 +281,16 @@
       background: #273a71;
     }
   }
-  p{
+  p {
     margin-bottom: 76px;
   }
   form {
     display: flex;
     width: 860px;
     margin: 0 auto;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    div{
-
+    div {
       .info {
         width: 388px;
         padding: 20px 0 17px 26px;
@@ -307,18 +300,22 @@
         outline: none;
         color: $color-white;
         margin-bottom: 27px;
-        &::-webkit-input-placeholder {color:$color-white;}
+        &::-webkit-input-placeholder {
+          color: $color-white;
+        }
       }
       .message {
         width: 808px;
-        padding:  22px 26px 30px 26px;
+        padding: 22px 26px 30px 26px;
         background-color: #273a71;
         color: $color-white;
         outline: none;
         border: none;
         border-radius: 5px;
-        margin:  0 0 60px 0;
-        &::-webkit-input-placeholder {color:$color-white;}
+        margin: 0 0 60px 0;
+        &::-webkit-input-placeholder {
+          color: $color-white;
+        }
       }
     }
   }
