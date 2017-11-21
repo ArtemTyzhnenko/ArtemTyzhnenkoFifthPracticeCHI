@@ -40,9 +40,32 @@ p {
 }
 
 
+@media(min-width: 1200px){
+  .top-of-head{
+    .navigation{
+      display: block!important;
+      ul{
+        li{
+          display: inline-block;
+        }
+      }
 
+    }
+  }
+}
 /*Medium size*/
 @media (min-width: 992px) and (max-width: 1199px) {
+  .top-of-head{
+    .navigation{
+      display: block!important;
+      ul{
+        li{
+          display: inline-block;
+        }
+      }
+
+    }
+  }
   .people-say {
     .reviews {
       justify-content: center;
@@ -63,8 +86,10 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
   .top-of-head {
     .navigation {
+      display: block!important;
       ul {
         li {
+          display: inline-block;
           a {
             padding: 5px 10px 3px 10px;
             font: 14px/15px 'Titillium Web', sans-serif;
@@ -80,6 +105,9 @@ p {
         justify-content: space-around;
         align-items: baseline;
         flex-wrap: wrap;
+        li{
+          width: 50%;
+        }
       }
     }
   }
@@ -90,6 +118,9 @@ p {
         justify-content: space-around;
         align-items: baseline;
         flex-wrap: wrap;
+        li{
+          width: 50%;
+        }
       }
     }
   }
@@ -98,6 +129,9 @@ p {
       ul {
         li {
           width: 50%;
+          h4{
+            font: 700 24px/28px 'Titillium Web';
+          }
         }
       }
     }
@@ -192,22 +226,49 @@ p {
     line-height: 50px;
   }
   .top-of-head {
-    margin: 0 0 50px 0;
-    button {
-      display: none;
-    }
+    margin: 0 0 30px 0;
+    position: relative;
     .logo {
       margin: 0 0 30px 0;
       padding: 0;
+      width: 100%;
+    }
+    button {
+      position: absolute;
+      right: 0;
+      top: -5px;
+      display: block!important;
+      background: none;
+      border: none;
+      padding: 5px 15px 0 15px;
+      line-height: 45px;
+      font-size: 1.4em;
+      outline: none;
+    }
+    .hamburger {
+      font-size: 20px;
     }
     .navigation {
+      width: 100%;
+      display: none;
       ul {
+        display: inline-block;
+        text-align: center;
+        width: 100px;
+        margin-right: 50%;
+        transform: translateX(50%);
+        padding: 0 ;
         li {
+          padding: 10px 0;
           margin: 0;
+
           a {
-            padding: 5px 6px 3px 6px;
-            font: 14px/18px 'Titillium Web', sans-serif;
-            color: #ffffff;
+            display: block;
+            text-align: center;
+            &:hover {
+              background: none;
+              border: none;
+            }
           }
         }
       }
@@ -346,19 +407,21 @@ p {
     line-height: 50px;
   }
   .top-of-head {
-    margin: 0 0 50px 0;
+    margin: 0 0 30px 0;
     position: relative;
     .logo {
       width: 100%;
+      margin: 0 0 30px 0;
+      padding: 0;
     }
     button {
       position: absolute;
       right: 0;
       top: -5px;
-      display: block;
+      display: block!important;
       background: none;
       border: none;
-      padding: 5px 15px 0px 15px;
+      padding: 5px 15px 0 15px;
       line-height: 45px;
       font-size: 1.4em;
       outline: none;
@@ -366,18 +429,16 @@ p {
     .hamburger {
       font-size: 20px;
     }
-    .cross {
-      font-size: 40px;
-    }
     .navigation {
       width: 100%;
+      display: none;
       ul {
-        float: none;
         display: inline-block;
         text-align: center;
         width: 100px;
-        margin-left: 50%;
-        transform: translateX(-50%);
+        margin-right: 50%;
+        transform: translateX(50%);
+        padding: 0;
         li {
           padding: 10px 0;
           margin: 0;
@@ -392,10 +453,6 @@ p {
           }
         }
       }
-    }
-    .logo {
-      margin: 0 0 50px 0;
-      padding: 0;
     }
   }
   .services {
@@ -450,10 +507,12 @@ p {
   }
   .portfolio {
     .portfolio-nav {
+      zoom: 0.5;
+      width: 100%;
       li {
-        margin: 0 0 20px 0;
+
         a {
-          width: 90px;
+          font: 26px/30px 'Titillium Web', sans-serif;
           margin: 0 10px 0 10px;
         }
       }
@@ -471,13 +530,13 @@ p {
     .reviews {
       justify-content: center;
       li {
-        margin-bottom: 40px;
+        margin-bottom: 100px;
         width: unset;
         &:nth-child(3) {
-          margin-bottom: 40px;
+          margin-bottom: 100px;
         }
         &:nth-child(4) {
-          margin-bottom: 40px;
+          margin-bottom: 100px;
         }
         .quote {
           width: 300px;

@@ -1,20 +1,26 @@
 $(document).ready(function () {
-  if ($(window).width() < 540) {
-  $(".cross").hide();
-  $(".navigation").hide();
+
   $(".hamburger").click(function () {
     $(".navigation").slideToggle("slow", function () {
-      $(".hamburger").hide();
-      $(".cross").show();
     });
   });
-  $( ".cross" ).click(function() {
-    $( ".navigation" ).slideToggle( "slow", function() {
-      $( ".cross" ).hide();
-      $( ".hamburger" ).show();
-    });
-  });
-  }
+
+
+  // if ($(window).width() <= 767) {
+  // $(".navigation").hide();
+  // $(".hamburger").click(function () {
+  //   $(".navigation").slideToggle("slow", function () {
+  //   });
+  // });
+  // // $( ".cross" ).click(function() {
+  // //   $( ".navigation" ).slideToggle( "slow", function() {
+  // //     $( ".cross" ).hide();
+  // //     $( ".hamburger" ).show();
+  // //   });
+  // // });
+  // }else if ($(window).width() >= 768){
+  //   $(".navigation").show();
+  // }
 });
 
 
