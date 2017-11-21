@@ -546,6 +546,9 @@ p {
       .skills .graphic ul li h4 {
         margin: 0 0 20px 0; }
 
+  .portfolio img {
+    width: 100%; }
+
   .people-say .reviews {
     justify-content: center; }
     .people-say .reviews li {

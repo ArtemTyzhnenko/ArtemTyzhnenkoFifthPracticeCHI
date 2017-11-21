@@ -39,13 +39,12 @@ p {
   padding: 0;
 }
 
-
-@media(min-width: 1200px){
-  .top-of-head{
-    .navigation{
-      display: block!important;
-      ul{
-        li{
+@media(min-width: 1200px) {
+  .top-of-head {
+    .navigation {
+      display: block !important;
+      ul {
+        li {
           display: inline-block;
         }
       }
@@ -53,13 +52,14 @@ p {
     }
   }
 }
+
 /*Medium size*/
 @media (min-width: 992px) and (max-width: 1199px) {
-  .top-of-head{
-    .navigation{
-      display: block!important;
-      ul{
-        li{
+  .top-of-head {
+    .navigation {
+      display: block !important;
+      ul {
+        li {
           display: inline-block;
         }
       }
@@ -86,7 +86,7 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
   .top-of-head {
     .navigation {
-      display: block!important;
+      display: block !important;
       ul {
         li {
           display: inline-block;
@@ -105,7 +105,7 @@ p {
         justify-content: space-around;
         align-items: baseline;
         flex-wrap: wrap;
-        li{
+        li {
           width: 50%;
         }
       }
@@ -118,7 +118,7 @@ p {
         justify-content: space-around;
         align-items: baseline;
         flex-wrap: wrap;
-        li{
+        li {
           width: 50%;
         }
       }
@@ -129,7 +129,7 @@ p {
       ul {
         li {
           width: 50%;
-          h4{
+          h4 {
             font: 700 24px/28px 'Titillium Web';
           }
         }
@@ -237,7 +237,7 @@ p {
       position: absolute;
       right: 0;
       top: -5px;
-      display: block!important;
+      display: block !important;
       background: none;
       border: none;
       padding: 5px 15px 0 15px;
@@ -257,7 +257,7 @@ p {
         width: 100px;
         margin-right: 50%;
         transform: translateX(50%);
-        padding: 0 ;
+        padding: 0;
         li {
           padding: 10px 0;
           margin: 0;
@@ -308,6 +308,11 @@ p {
           }
         }
       }
+    }
+  }
+  .portfolio {
+    img {
+      width: 100%;
     }
   }
   .people-say {
@@ -418,7 +423,7 @@ p {
       position: absolute;
       right: 0;
       top: -5px;
-      display: block!important;
+      display: block !important;
       background: none;
       border: none;
       padding: 5px 15px 0 15px;
