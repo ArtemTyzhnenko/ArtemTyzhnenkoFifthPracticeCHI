@@ -39,10 +39,7 @@ p {
   padding: 0;
 }
 
-blockquote {
-  margin: 0;
-  padding: 0;
-}
+
 
 /*Medium size*/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -64,7 +61,6 @@ blockquote {
 
 /*Tablets*/
 @media (min-width: 768px) and (max-width: 991px) {
-
   .top-of-head {
     .navigation {
       ul {
@@ -402,7 +398,6 @@ blockquote {
       padding: 0;
     }
   }
-
   .services {
     .categories {
       ul {
@@ -434,7 +429,6 @@ blockquote {
       }
     }
   }
-
   .skills {
     .graphic {
       ul {

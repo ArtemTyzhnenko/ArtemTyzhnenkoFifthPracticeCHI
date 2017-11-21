@@ -294,7 +294,8 @@ header {
       padding-top: 2px;
       font: 22px/33px 'Titillium Web', sans-serif;
       font-style: italic;
-      margin: 0 0 24px 0; }
+      margin: 0 0 24px 0;
+      color: #ffffff; }
     .people-say .quote h4 {
       margin: 0 0 5px 0; }
     .people-say .quote span {
@@ -376,10 +377,6 @@ a {
   text-decoration: none; }
 
 p {
-  margin: 0;
-  padding: 0; }
-
-blockquote {
   margin: 0;
   padding: 0; }
 
